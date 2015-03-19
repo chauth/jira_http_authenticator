@@ -154,7 +154,7 @@ public class ShibAuthConfigLoader {
             }
 
             config.setDefaultRoles(defaultRoles);
-            config.setRemoteUserHeaderName(configProps.getProperty(ShibAuthConstants.REMOTE_USER_HEADER_NAME_PROPERTY, "REMOTE_USER"));
+            config.setRemoteUserHeaderName(configProps.getProperty(ShibAuthConstants.REMOTE_USER_HEADER_NAME_PROPERTY));
 
             if (log.isDebugEnabled()) {
                 log.debug("HTTP Header that may contain user's username set to: " + config.getRemoteUserHeaderName());
