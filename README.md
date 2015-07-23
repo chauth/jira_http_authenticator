@@ -43,5 +43,5 @@ Copyright (c) 2008-2014, Confluence HTTP Authenticator Team, released under a [B
 [changelog]: http://github.com/chauth/jira_http_authenticator/blob/master/CHANGELOG.md
 [confluence]: http://github.com/chauth/confluence_http_authenticator/
 [lic]: http://github.com/chuath/jira_http_authenticator/blob/master/LICENSE
-[config]: http://github.com/chauth/jira_http_authenticator/master/conf/
+[config]: http://github.com/chauth/jira_http_authenticator/blob/master/conf/remoteUserAuthenticator.properties
 
