@@ -15,8 +15,12 @@
             <url>https://maven.atlassian.com/content/repositories/atlassian-public/</url>
         </repository>
         <repository>
-            <id>Opencast Project Public</id>
-            <url>http://repository.opencastproject.org/nexus/content/repositories/public/</url>
+            <id>Spring IO</id>
+            <url>http://repo.spring.io/libs-release-remote/</url>
+        </repository>
+        <repository>
+            <id>Nuxeo.org </id>
+            <url>https://maven-us.nuxeo.org/nexus/content/repositories/public/</url>
         </repository>
     </repositories>
     <dependencies>
