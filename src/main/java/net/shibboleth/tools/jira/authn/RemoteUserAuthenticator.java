@@ -52,6 +52,8 @@ import com.atlassian.jira.component.ComponentAccessor;
 import com.atlassian.jira.security.groups.GroupManager;
 import com.atlassian.jira.security.login.JiraSeraphAuthenticator;
 import com.atlassian.jira.security.login.LoginManager;
+import com.atlassian.jira.user.ApplicationUser;
+import com.atlassian.jira.user.ApplicationUsers;
 import com.atlassian.jira.user.util.UserManager;
 import com.atlassian.seraph.auth.AuthenticatorException;
 import com.atlassian.seraph.auth.LoginReason;
@@ -292,9 +294,10 @@ public class RemoteUserAuthenticator extends JiraSeraphAuthenticator {
             }
 
             User crowdUser = crowdService.getUser(user.getName());
+            ApplicationUser applicationUser = ApplicationUsers.from(crowdUser);
             Collection purgeMappers = config.getPurgeMappings();
 
-            Collection<String> roles = groupManager.getGroupNamesForUser(crowdUser);
+            Collection<String> roles = groupManager.getGroupNamesForUser(applicationUser);
             Iterator<String> i = roles.iterator();
             while (i.hasNext()) {
                 String role = i.next();
