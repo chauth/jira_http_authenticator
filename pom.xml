@@ -11,8 +11,8 @@
     <packaging>jar</packaging>
     <repositories>
         <repository>
-            <id>Atlassian Public</id>
-            <url>https://maven.atlassian.com/content/repositories/atlassian-public/</url>
+            <id>Atlassian Maven Proxy</id>
+            <url>https://packages.atlassian.com/maven/repository/public</url>
         </repository>
         <repository>
             <id>Spring IO</id>
