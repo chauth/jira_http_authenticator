@@ -14,14 +14,6 @@
             <id>Atlassian Maven Proxy</id>
             <url>https://packages.atlassian.com/maven/repository/public</url>
         </repository>
-        <repository>
-            <id>Spring IO</id>
-            <url>http://repo.spring.io/libs-release-remote/</url>
-        </repository>
-        <repository>
-            <id>Nuxeo.org </id>
-            <url>https://maven-us.nuxeo.org/nexus/content/repositories/public/</url>
-        </repository>
     </repositories>
     <dependencies>
         <dependency>
